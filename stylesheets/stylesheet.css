@@ -491,6 +491,78 @@ section#instagram {
     margin-bottom: 30px;
 }
 
+section#panels {
+    text-transform: uppercase;
+}
+
+#panels-title {
+    width: 310px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#panels-title-l1,  #panels-title-l2 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#panels-title-l1 {
+    margin-bottom: 0px;
+    font-size: 2em;
+    color: #B91616;
+}
+
+#panels-title-l2 {
+    margin-bottom: 0px;
+    font-size: 0.85em;
+    color: black;
+    font-style: italic;
+}
+
+#panels-feature1 {
+    position: absolute;
+    right: 150px;
+    margin-top: -120px;
+    color: white;
+    background-color: rgba(230,20,20,0.7);
+    font-style: italic;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#panels-feature2 {
+    position: absolute;
+    right: 250px;
+    margin-top: -80px;
+    color: white;
+    background-color: rgba(230,20,20,0.7);
+    font-style: italic;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#panels-feature3 {
+    position: absolute;
+    right: 10px;
+    margin-top: -40px;
+    color: white;
+    background-color: rgba(230,20,20,0.7);
+    font-style: italic;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
@@ -677,24 +749,11 @@ form {
   text-indent: 3px;
 }
 
-h4:before {
-  padding-right: 0.3em;
-  margin-left: -2.8em;
-  content: "////";
-  color: #9ddcff;
-}
-
 #main-content h5 {
   margin-bottom: 8px;
   font-size: 14px;
   color: #474747;
   text-indent: 3px;
-}
-h5:before {
-  padding-right: 0.3em;
-  margin-left: -3.2em;
-  content: "/////";
-  color: #9ddcff;
 }
 
 #main-content h6 {
