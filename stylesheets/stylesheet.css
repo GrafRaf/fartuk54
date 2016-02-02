@@ -485,6 +485,12 @@ header h2 {
     width: 100%
 }
 
+section#instagram {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
