@@ -533,6 +533,7 @@ section#panels {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+    display: block;
 }
 
 #panels-feature2 {
@@ -547,6 +548,7 @@ section#panels {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+    display: block;
 }
 
 #panels-feature3 {
@@ -561,6 +563,7 @@ section#panels {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+    display: block;
 }
 
 .ttuc {
@@ -646,7 +649,7 @@ section#panels {
     text-align: center;
 }
 
-.action-buttons span {
+.action-buttons .button_example  {
     background-color: #A20000;
     color: white;
     text-transform: uppercase;
