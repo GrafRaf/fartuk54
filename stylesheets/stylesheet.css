@@ -481,9 +481,18 @@ header h2 {
   margin: 0 auto;
 }
 /* -------------- my -------------- */
-#panels img, #schema img, #catalog img {
+#panels img, #schema img, #catalog img, #mount img {
     width: 100%
 }
+
+section#design-text, section#production-text, section#mount-text {
+    margin-top: 20px;
+}
+
+section#design-text p, section#production-text p, section#mount-text p {
+    text-align: center;
+}
+
 
 section#instagram {
     text-align: center;
@@ -680,6 +689,10 @@ border:1px solid #72021c; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
  background-image: -ms-linear-gradient(top, #77021d, #3a000d);
  background-image: -o-linear-gradient(top, #77021d, #3a000d);
  background-image: linear-gradient(to bottom, #77021d, #3a000d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#77021d, endColorstr=#3a000d);
+}
+
+#mount {
+    
 }
 
 #content-wrapper {
