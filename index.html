@@ -54,12 +54,13 @@
                 </div>
                 
                 <div id="call-request" title="Заказать звонок">
-                    <form action="" method="POST">
+                    <form action="http://apitest20160203050209.azurewebsites.net/api/values" method="POST">
+                        <input type="hidden" name="MsgType" value="Заказ на звонок" />
                         <label>Ваш телефон:</label>
-                        <input type="text" required />
+                        <input name="Sender" type="text" required />
                         <label>Сообщение:</label>
-                        <textarea></textarea>
-                        <span class="button_example" onclick="callRequest()">Заказать звонок</span>
+                        <textarea name="MsgBody"></textarea>
+                        <input type="submit" class="button_example" value="Заказать звонок">
                     </form>
                 </div>
                 
@@ -132,12 +133,13 @@
                 </div>
 
                 <div id="call-request" title="Заявка на замер">
-                    <form action="" method="POST">
+                    <form action="http://apitest20160203050209.azurewebsites.net/api/values" method="POST">
+                        <input type="hidden" name="Sender" value="Заявка на замер" />
                         <label>Ваш адрес/телефон:</label>
-                        <input type="text" required />
+                        <input name="Sender" type="text" required />
                         <label>Сообщение:</label>
-                        <textarea></textarea>
-                        <span class="button_example" onclick="callRequest()">Оставить заявку</span>
+                        <textarea name="MsgBody"></textarea>
+                        <input type="submit" class="button_example" value="Оставить заявку"/>
                     </form>
                 </div>                    
             </section>
