@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,15 +43,26 @@
             </section>
 
             <section id="design-text">
-                <p> Дизайн. Создание макетов с учетом пожеланий клиента (подбор под цвет интерьера, сделаем визуализации, 
-                    найдем картинки из каталогов других производителей, работа с платным контентом изображений).</p>
-            </section>
-                        
-            <section id="instagram">
-                <a id="instagram-link" href="https://www.instagram.com/fartuk54/" target="_blank">
-                    <img src="./images/instagram.jpg">
-                    <h3>Примеры наших работ в Instagram</h3>
-            	</a>
+                <div id="design-instagram">
+                    <p> Дизайн. Создание макетов с учетом пожеланий клиента (подбор под цвет интерьера, сделаем визуализации, 
+                        найдем картинки из каталогов других производителей, работа с платным контентом изображений).</p>
+
+                    <a id="instagram-link" href="https://www.instagram.com/fartuk54/" target="_blank">
+                        <img src="./images/instagram.jpg">
+                        <h3>Примеры наших работ в Instagram</h3>
+            	   </a>
+                </div>
+                
+                <div id="call-request" title="Заказать звонок">
+                    <form action="" method="POST">
+                        <label>Ваш телефон:</label>
+                        <input type="text" required />
+                        <label>Сообщение:</label>
+                        <textarea></textarea>
+                        <span class="button_example" onclick="callRequest()">Заказать звонок</span>
+                    </form>
+                </div>
+                
             </section>
             
             <section id="schema-title">
@@ -85,7 +94,7 @@
                             <h4 class="ttuc">3. Договор</h4>
                            <ol>
                                 <li>Выбор места подписания</li>
-                                <li>гарантия 5 лет, при выборе закалённого стекла</li>
+                                <li>гарантия 3 года, при выборе закалённого стекла</li>
                                 <li>Предоплата 50% при заключении договора, остаток после приёма работ Вами</li>
                         </ol>
                         </div>
@@ -115,26 +124,30 @@
                 <img src="./images/catalog-images.png"/>
             </section>
             
-            <section id="mount-text">
+            <section id="mount-block">
+                <div id="mount-text">
                 <p>Установка. Бригада специалистов выполнит замер, доставку, монтаж различной сложности с минимальным количеством стыков. 
                     Гарантия — 3 года на наш монтаж с закаленнымистеклами.</p>
-            </section>
-            
-            <section id="catalog">
-                <div class="action-buttons">
-                    <span class="button_example" onclick="alert('Заявка на замер')">Заявка на замер</span>
-                    <span class="button_example" onclick="alert('Заявка на звонок')">Заявка на звонок</span>
                 </div>
-            </section>            
-            
+
+                <div id="call-request" title="Заявка на замер">
+                    <form action="" method="POST">
+                        <label>Ваш адрес/телефон:</label>
+                        <input type="text" required />
+                        <label>Сообщение:</label>
+                        <textarea></textarea>
+                        <span class="button_example" onclick="callRequest()">Оставить заявку</span>
+                    </form>
+                </div>                    
+            </section>
+
             <section id="mount">
                 <img src="./images/mount.jpg"/>
             </section>                    
                     
         </div>
     </div>
-
-
+   
 </body>
 
 </html>
