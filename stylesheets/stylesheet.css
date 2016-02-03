@@ -480,7 +480,7 @@ header h2 {
   width: 940px;
   margin: 0 auto;
 }
-
+/* -------------- my -------------- */
 #panels img, #schema img, #catalog img {
     width: 100%
 }
@@ -561,6 +561,122 @@ section#panels {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.ttuc {
+    text-transform: uppercase;
+}
+
+#schema-title, #schema-body {
+    position: relative;
+}
+
+#schema-title img, #schema-body img {
+    width: 100%
+}
+
+#schema-body {
+    margin-top: -6px;
+}
+
+#schema-title-text {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+}
+
+#schema-title-text-l1,  #schema-title-text-l2 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#schema-title-text-l1 {
+    margin-bottom: 0px;
+    font-size: 2em;
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#schema-title-text-l2 {
+    margin-bottom: 0px;
+    font-size: 2em;
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#schema-steps{
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+
+#schema-wrapper {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schema-step {
+    float: left;
+    width: 33%;
+    margin-left: 10%;
+    background: rgba(173, 255, 47, 0.59);
+    border-radius: 10px;
+    padding-left: 33px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.schema-step h4 {
+    margin-bottom: 3px;
+}
+
+.schema-step ol {
+    margin-top: 0px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.action-buttons span {
+    background-color: #A20000;
+    color: white;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    font-size: x-large;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_example{
+border:1px solid #72021c; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #a90329; background-image: -webkit-gradient(linear, left top, left bottom, from(#a90329), to(#6d0019));
+ background-image: -webkit-linear-gradient(top, #a90329, #6d0019);
+ background-image: -moz-linear-gradient(top, #a90329, #6d0019);
+ background-image: -ms-linear-gradient(top, #a90329, #6d0019);
+ background-image: -o-linear-gradient(top, #a90329, #6d0019);
+ background-image: linear-gradient(to bottom, #a90329, #6d0019);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a90329, endColorstr=#6d0019);
+}
+
+.button_example:hover{
+ border:1px solid #450111;
+ background-color: #77021d; background-image: -webkit-gradient(linear, left top, left bottom, from(#77021d), to(#3a000d));
+ background-image: -webkit-linear-gradient(top, #77021d, #3a000d);
+ background-image: -moz-linear-gradient(top, #77021d, #3a000d);
+ background-image: -ms-linear-gradient(top, #77021d, #3a000d);
+ background-image: -o-linear-gradient(top, #77021d, #3a000d);
+ background-image: linear-gradient(to bottom, #77021d, #3a000d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#77021d, endColorstr=#3a000d);
 }
 
 #content-wrapper {
