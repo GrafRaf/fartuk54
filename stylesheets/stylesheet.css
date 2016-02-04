@@ -740,6 +740,10 @@ border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
     border-radius: 5px;
 }
 
+#mount {
+    position: relative;
+}
+
 #mount-block {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -753,6 +757,23 @@ border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 #mount-text p {
     float: left;
     margin-bottom: 60px;
+}
+
+#mount-title {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 0.8em;
+}
+
+#mount-title-l1 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+    color: #B91616;    
 }
 
 form h3 {
