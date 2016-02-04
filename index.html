@@ -182,18 +182,18 @@
                     break;                
            };
            var xhttp = new XMLHttpRequest();
+           xhttp.open("POST", "http://apitest20160203050209.azurewebsites.net/api/values", true);
+           xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
            xhttp.onreadystatechange = function() {
                 //console.log(xhttp);
                 //if (xhttp.readyState == 4 && xhttp.status == 200) {
-                if (xhttp.readyState == 2 && xhttp.status == 204) {
+                if (xhttp.readyState == 4 && xhttp.status == 204) {
                     //document.getElementById("demo").innerHTML = xhttp.responseText;
                     alert("Спасибо! Ваша заявка получена и будет обработана в ближайшее время.");
                 }else{
                     alert("К сожалению, что-то пошло не так. \r\nПопробуйте ещё раз или позвоните/напишите нам: \r\n телефон 8-913-006-45-75\r\n.почта 2874575@mail.ru\r\n\r\nСпасибо.");
                 }
             };
-           xhttp.open("POST", "http://apitest20160203050209.azurewebsites.net/api/values", true);
-           xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
            xhttp.send("MsgType="+encodeURI(msgType)+"&Sender="+encodeURI(sender)+"&MsgBody="+encodeURI(msgBody));
        }
     </script>
