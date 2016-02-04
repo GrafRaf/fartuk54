@@ -24,7 +24,7 @@
                 <br/>
                 <span>8-913-006-45-75</span>
                 <br/>
-                <span><a href="mailto:2874575@mail.ru">2874575@mail.ru</a></span>                    
+                <span><a href="mailto:2874575@mail.ru">2874575@mail.ru</a></span>
             </div>
         </div>
     </header>
@@ -32,7 +32,7 @@
     <div id="content-wrapper">
         <div class="inner clearfix">
             <section id="panels" class="ttuc">
-                <img src="./images/panels.jpg"/>
+                <img src="./images/panels.jpg" />
                 <div id="panels-title">
                     <h2 id="panels-title-l1">Кухонные панели</span>
                     <h4 id="panels-title-l2">из особо прочного закалённого стекла</span>
@@ -55,12 +55,13 @@
                 
                 <div id="call-request" title="Заказать звонок">
                     <form action="http://apitest20160203050209.azurewebsites.net/api/values" method="POST">
+                        <h3>Заказать звонок</h3>
                         <input type="hidden" name="MsgType" value="Заказ на звонок" />
                         <label>Ваш телефон:</label>
-                        <input name="Sender" type="text" required />
+                        <input name="Sender" id="callRequestSender" type="text" required />
                         <label>Сообщение:</label>
-                        <textarea name="MsgBody"></textarea>
-                        <input type="submit" class="button_example" value="Заказать звонок">
+                        <textarea name="MsgBody" id="callRequestMsgBody"></textarea>
+                        <input type="button" class="button_example" value="Заказать звонок" onclick="sendCallRequest()"/>
                     </form>
                 </div>
                 
@@ -74,83 +75,129 @@
                 </div>
             </section>
             <section id="schema-body">
-                <img src="./images/schema-body.jpg"/>
+                <img src="./images/schema-body.jpg" />
                 <div id="schema-steps">
-                        <div id="schema-step-1" class="schema-step">
-                            <h4 class="ttuc">1. Замер, заявка</h4>
-                            <p>
-                                Бесплатный вызов на дом (производится после установки кухни, при выведенных розетках)
-                                С 8:00 до 20:00 ежедневно
-                            </p>
-                        </div>
-                        <div id="schema-step-2" class="schema-step">
-                            <h4 class="ttuc">2. Стоимость заявки</h4>
-                            <ol>
-                                <li>Расчёт стоимости</li>
-                                <li>Обсуждение стоимости по телефону</li>
-                                <li>Ваше решение</li>
-                            </ol>
-                        </div>
-                        <div id="schema-step-3" class="schema-step">
-                            <h4 class="ttuc">3. Договор</h4>
-                           <ol>
-                                <li>Выбор места подписания</li>
-                                <li>гарантия 3 года, при выборе закалённого стекла</li>
-                                <li>Предоплата 50% при заключении договора, остаток после приёма работ Вами</li>
+                    <div id="schema-step-1" class="schema-step">
+                        <h4 class="ttuc">1. Замер, заявка</h4>
+                        <p>
+                            Бесплатный вызов на дом (производится после установки кухни, при выведенных розетках) С 8:00 до 20:00 ежедневно
+                        </p>
+                    </div>
+                    <div id="schema-step-2" class="schema-step">
+                        <h4 class="ttuc">2. Стоимость заявки</h4>
+                        <ol>
+                            <li>Расчёт стоимости</li>
+                            <li>Обсуждение стоимости по телефону</li>
+                            <li>Ваше решение</li>
                         </ol>
-                        </div>
-                        <div id="schema-step-4" class="schema-step">
-                            <h4 class="ttuc">4. Работа с менджером по оформлению изображения:</h4>
-                            <p>при желании подгонка цвета под цвет интерьера, утверждение цветопробы для оценки какчества изображения и цветопередачи</p>
-                            <ul>
+                    </div>
+                    <div id="schema-step-3" class="schema-step">
+                        <h4 class="ttuc">3. Договор</h4>
+                        <ol>
+                            <li>Выбор места подписания</li>
+                            <li>гарантия 3 года, при выборе закалённого стекла</li>
+                            <li>Предоплата 50% при заключении договора, остаток после приёма работ Вами</li>
+                        </ol>
+                    </div>
+                    <div id="schema-step-4" class="schema-step">
+                        <h4 class="ttuc">4. Работа с менджером по оформлению изображения:</h4>
+                        <p>при желании подгонка цвета под цвет интерьера, утверждение цветопробы для оценки какчества изображения
+                            и цветопередачи</p>
+                        <ul>
                             <li><a href="./content/catalog.pdf" target="_blank">Наш каталог</a></li>
                             <li>Чужой каталог</li>
                             <li>Сайт <a href="http://www.shutterstock.com" target="_blank">www.shutterstock.com</a></li>
-                            </ul>
-                        </div>
-                </div>                               
+                        </ul>
+                    </div>
+                </div>
             </section>
-            
+
             <section id="production-text">
-                <p>Производство. Изготовление стеклоизделия с учетом технологических особенностей 
-                    (прямая УФ-печать, армирование пленкой, длина стекла без разделения — до 3195 мм).</p>
-            </section>                                             
-            
+                <p>Производство. Изготовление стеклоизделия с учетом технологических особенностей (прямая УФ-печать, армирование
+                    пленкой, длина стекла без разделения — до 3195 мм).</p>
+            </section>
+
             <section id="catalog-actions">
                 <div class="action-buttons">
                     <a href="./content/catalog.pdf" target="_blank" class="button_example">Наш каталог</a>
                 </div>
-            </section>    
-            
-            <section id="catalog">
-                <img src="./images/catalog-images.jpg"/>
             </section>
-            
+
+            <section id="catalog">
+                <img src="./images/catalog-images.jpg" />
+            </section>
+
             <section id="mount-block">
                 <div id="mount-text">
-                <p>Установка. Бригада специалистов выполнит замер, доставку, монтаж различной сложности с минимальным количеством стыков. 
-                    Гарантия — 3 года на наш монтаж с закаленными стеклами.</p>
+                    <p>Установка. Бригада специалистов выполнит замер, доставку, монтаж различной сложности с минимальным количеством
+                        стыков. Гарантия — 3 года на наш монтаж с закаленными стеклами.</p>
                 </div>
 
                 <div id="call-request" title="Заявка на замер">
                     <form action="http://apitest20160203050209.azurewebsites.net/api/values" method="POST">
-                        <input type="hidden" name="Sender" value="Заявка на замер" />
+                        <h3>Заявка на замер</h3>
+                        <input type="hidden" name="MsgType" value="Заявка на замер" />
                         <label>Ваш адрес/телефон:</label>
-                        <input name="Sender" type="text" required />
+                        <input name="Sender" id="measureRequestSender" type="text" required />
                         <label>Сообщение:</label>
-                        <textarea name="MsgBody"></textarea>
-                        <input type="submit" class="button_example" value="Оставить заявку"/>
+                        <textarea name="MsgBody" id="measureRequestMsgBody"></textarea>
+                        <input type="button" class="button_example" value="Оставить заявку" onclick="sendMeasureRequest()" />
                     </form>
-                </div>                    
+                </div>
             </section>
 
             <section id="mount">
-                <img src="./images/mount.jpg"/>
-            </section>                    
-                    
+                <img src="./images/mount.jpg" />
+            </section>
+
         </div>
     </div>
-   
+
+    <script>
+        function sendCallRequest(){
+           sendMsg("Заказ звонка");
+       }
+       
+       function sendMeasureRequest(){
+           sendMsg("Заявка на замер");
+       }
+       
+       function sendMsg(msgType){
+           var msgBody = "";
+           var sender = "";
+           switch (msgType) {
+               case "Заказ звонка":
+                    msgBody = document.getElementById("callRequestMsgBody").value;
+                    sender = document.getElementById("callRequestSender").value;
+                    break;
+               case "Заявка на замер":
+                    msgBody = document.getElementById("measureRequestMsgBody").value;
+                    sender = document.getElementById("measureRequestSender").value;                
+                    break;
+               default:
+                    msgBody = document.getElementById("callRequestMsgBody").value;
+                    sender = document.getElementById("callRequestSender").value;
+                    msgBody += "|"+document.getElementById("measureRequestMsgBody").value;
+                    sender += "|"+document.getElementById("measureRequestSender").value;
+                    break;                
+           };
+           var xhttp = new XMLHttpRequest();
+           xhttp.onreadystatechange = function() {
+                //console.log(xhttp);
+                //if (xhttp.readyState == 4 && xhttp.status == 200) {
+                if (xhttp.readyState == 2 && xhttp.status == 204) {
+                    //document.getElementById("demo").innerHTML = xhttp.responseText;
+                    alert("Спасибо! Ваша заявка получена и будет обработана в ближайшее время.");
+                }else{
+                    alert("К сожалению, что-то пошло не так. \r\nПопробуйте ещё раз или позвоните/напишите нам: \r\n телефон 8-913-006-45-75\r\n.почта 2874575@mail.ru\r\n\r\nСпасибо.");
+                }
+            };
+           xhttp.open("POST", "http://apitest20160203050209.azurewebsites.net/api/values", true);
+           xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+           xhttp.send("MsgType="+encodeURI(msgType)+"&Sender="+encodeURI(sender)+"&MsgBody="+encodeURI(msgBody));
+       }
+    </script>
+
 </body>
 
 </html>

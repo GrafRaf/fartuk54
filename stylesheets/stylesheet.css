@@ -755,6 +755,11 @@ border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
     margin-bottom: 60px;
 }
 
+form h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 #content-wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
