@@ -137,7 +137,7 @@
                     <form action="http://apitest20160203050209.azurewebsites.net/api/values" method="POST">
                         <h3>Заявка на замер</h3>
                         <input type="hidden" name="MsgType" value="Заявка на замер" />
-                        <label>Ваш адрес/телефон:</label>
+                        <label>Ваш email/телефон:</label>
                         <input name="Sender" id="measureRequestSender" type="text" required />
                         <label>Сообщение:</label>
                         <textarea name="MsgBody" id="measureRequestMsgBody"></textarea>
@@ -172,7 +172,7 @@
                     break;
                case "Заявка на замер":
                     msgBody = document.getElementById("measureRequestMsgBody").value;
-                    sender = document.getElementById("measureRequestSender").value;                
+                    sender = document.getElementById("measureRequestSender").value;
                     break;
                default:
                     msgBody = document.getElementById("callRequestMsgBody").value;
@@ -181,6 +181,9 @@
                     sender += "|"+document.getElementById("measureRequestSender").value;
                     break;                
            };
+           if ((sender || "").length < 7) {
+               alert("Пожалуйста, проверьте указанный email/номер телефона");
+           } else {
            var xhttp = new XMLHttpRequest();
            xhttp.open("POST", "http://apitest20160203050209.azurewebsites.net/api/values", true);
            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -196,7 +199,8 @@
                     }
                 }
             };
-           xhttp.send("MsgType="+encodeURI(msgType)+"&Sender="+encodeURI(sender)+"&MsgBody="+encodeURI(msgBody));
+           xhttp.send("MsgType="+encodeURI(msgType)+"&Sender="+encodeURI(sender)+"&MsgBody="+encodeURI(msgBody));               
+           }
        }
     </script>
 
