@@ -1062,7 +1062,9 @@ header h3{
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) { 
+   
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -1091,6 +1093,51 @@ header h3{
     margin-left: 0;
     content: none;
   }
+ 
+header h3 {
+    color: white;
+    font-weight: initial;
+    margin-bottom: -10px;
+    margin-top: 35px;
+} 
+  
+#schema-steps {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    font-size: 0.8em;
+}
+
+.schema-step {
+    float: left;
+    width: 40%;
+    margin-left: 3%;
+    background: rgba(173, 255, 47, 0.59);
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+ 
+#schema-step-4 > p {
+    margin-bottom: 0px;    
+}
+ 
+#design-instagram {
+    width: 60%;
+    display: inline-block;
+} 
+
+#mount-text {
+    width: 60%;
+    display: inline-block;
+}
+ 
+#call-request, #sizing-request {
+    width: 30%;
+    display: inline-block;
+    margin-left: 3%;
+}  
+  
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -1159,6 +1206,54 @@ header h3{
     margin-left: 0;
     content: none;
   }
+ 
+header h3 {
+    color: white;
+    font-weight: initial;
+    margin-bottom: -10px;
+    margin-top: 35px;
+} 
+ 
+#schema-steps {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    font-size: 0.8em;
+}
+
+.schema-step {
+    float: left;
+    width: 40%;
+    margin-left: 3%;
+    background: rgba(173, 255, 47, 0.59);
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+ 
+#schema-step-4 > p {
+    margin-bottom: 0px;    
+}
+ 
+#design-instagram {
+    width: 60%;
+    display: inline-block;
+} 
+
+#mount-text {
+    width: 60%;
+    display: inline-block;
+}
+ 
+#call-request, #sizing-request {
+    width: 30%;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+
+ 
+ 
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
