@@ -59,9 +59,13 @@
                         <h3>Заказать звонок</h3>
                         <input type="hidden" name="MsgType" value="Заказ на звонок" />
                         <label>Ваш телефон:</label>
+                        <br/>
                         <input name="Sender" id="callRequestSender" type="text" required />
+                        <br/>
                         <label>Сообщение:</label>
+                        <br/>
                         <textarea name="MsgBody" id="callRequestMsgBody"></textarea>
+                        <br/>
                         <input type="button" class="button_example" value="Заказать звонок" onclick="sendCallRequest()"/>
                     </form>
                 </div>
@@ -143,9 +147,13 @@
                         <h3>Заявка на замер</h3>
                         <input type="hidden" name="MsgType" value="Заявка на замер" />
                         <label>Ваш email/телефон:</label>
+                        <br/>
                         <input name="Sender" id="measureRequestSender" type="text" required />
+                        <br/>
                         <label>Сообщение:</label>
+                        <br/>
                         <textarea name="MsgBody" id="measureRequestMsgBody"></textarea>
+                        <br/>
                         <input type="button" class="button_example" value="Оставить заявку" onclick="sendMeasureRequest()" />
                     </form>
                 </div>
