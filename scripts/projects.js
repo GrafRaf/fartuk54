@@ -17,7 +17,7 @@ function createTremula(){
       itemConstraint      :250,//px
 
       //Margin in px added to each side of each content item
-      itemMargins         :[10,10],//x (left & right), y (top & bottom) in px
+      itemMargins         :[20,10],//x (left & right), y (top & bottom) in px
 
       //Display offset of static axis (static axis is the non-scrolling dimention)
       staticAxisOffset    :0,//px
@@ -42,7 +42,7 @@ function createTremula(){
       // (x) enterTheDragon
       // (x) userProjection  <-- 
       //----------------------
-      surfaceMap          :userProjection,//tremula.projections.streamHorizontal,
+      surfaceMap          :tremula.projections.enterTheDragon,//userProjection,
 
       //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
       staticAxisCount     :0,//zero based 
