@@ -42,10 +42,10 @@ function createTremula(){
       // (x) enterTheDragon
       // (x) userProjection  <-- 
       //----------------------
-      surfaceMap          :tremula.projections.enterTheDragon,//userProjection,
+      surfaceMap          :tremula.projections.mountain,//userProjection,
 
       //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
-      staticAxisCount     :0,//zero based 
+      staticAxisCount     :1,//zero based 
 
       //the grid that will be used to project content
       //NOTE: Generally, this will stay the same and various surface map projections
@@ -112,6 +112,7 @@ function createTremula(){
   //Another option here is multiple tremula instancechaining i.e. follow the scroll events of another tremula instance.
   //use case of this may be one tremula displaying close up data view while another may be an overview.
   function doScrollEvents(o){
+/*
     if(o.scrollProgress>.7){
       if(!tremula.cache.endOfScrollFlag){
         tremula.cache.endOfScrollFlag = true;
@@ -120,6 +121,7 @@ function createTremula(){
         console.log('END OF SCROLL!')
       }
     }
+*/    
   };
 
 
