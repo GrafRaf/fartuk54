@@ -370,15 +370,15 @@ function createTremula(){
 {width_n: 800, height_n: 600, url_n: '/content/projects/221.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/222.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/223.jpg', title:'Кухонное стеклянное панно из закалённого стекла. Длинна одного стекла более 3000 мм.' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/224.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/224.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/225.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/226.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/227.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/228.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/229.jpg', title:'Панель кухонная из калёного стекла' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/230.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/231.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/232.jpg', title:'Кухонное стеклянное панно из закалённого стекла. Длинна одного стекла более 3000 мм.' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/226.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/227.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/228.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/229.jpg', title:'Панель кухонная из калёного стекла' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/230.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/231.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/232.jpg', title:'Кухонное стеклянное панно из закалённого стекла. Длинна одного стекла более 3000 мм.' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/233.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/234.jpg', title:'Фотопечать на фасадах' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/235.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
@@ -388,7 +388,7 @@ function createTremula(){
 {width_n: 800, height_n: 600, url_n: '/content/projects/239.jpg', title:'Фотопечать на фасадах' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/240.jpg', title:'Кухонное стеклянное панно из закалённого стекла. Длинна одного стекла более 3000 мм.' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/241.jpg', title:'Фотопечать на фасадах' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/242.jpg', title:'Фотопечать на фасадах' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/242.jpg', title:'Фотопечать на фасадах' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/243.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/244.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/245.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
@@ -399,11 +399,12 @@ function createTremula(){
 {width_n: 800, height_n: 600, url_n: '/content/projects/250.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/251.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/252.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/253.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
-{width_n: 800, height_n: 600, url_n: '/content/projects/254.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/253.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
+{width_n: 600, height_n: 800, url_n: '/content/projects/254.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/255.jpg', title:'Фотопечать на фасадах' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/256.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/257.jpg', title:'Фотопечать на фасадах' },
+/*
 {width_n: 800, height_n: 600, url_n: '/content/projects/258.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/259.jpg', title:'Модульные картины в интерьер из заклённого стекла' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/260.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
@@ -418,6 +419,7 @@ function createTremula(){
 {width_n: 800, height_n: 600, url_n: '/content/projects/269.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/270.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' },
 {width_n: 800, height_n: 600, url_n: '/content/projects/271.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' }          
+*/
 ];
       tremula.appendData(rs,fartukDataAdapter);//flicker
       tremula.cache.endOfScrollFlag = false;
@@ -478,71 +480,6 @@ function createTremula(){
 
 
 
-//====================
-// This is a custom Projection template which allows you to specify your own bezier path
-// To use, modify the above configuration @ surfaceMap -->  surfaceMap : userProjection,
-
-//EXPERIMENTAL! Generally, this works, But it's not particularly tested. Some paths may not work as expected.
-//Please file bugs to https://github.com/garris/TremulaJS/issues
-
-// ALSO:  This currently only works in horizontal mode.  Vertical coming soon.
-
-// Handy bezier editor/visualizer here --> https://www.desmos.com/calculator/iaf7aha9yl
-
-	var userPath = [
-		{x:0,y:.2},
-		{x:.5,y:.5},
-		{x:.5,y:.8},
-		{x:1,y:.5}
-	];
-
-
-
-	function userProjection(x,y){
-
-		var curve = userPath;
-
-		var 
-		grid0 = this.parent.gridDims[0],
-		grid1 = this.parent.gridDims[1],
-		axisLength = this.parent.currentGridContentDims,
-		tRamp = this.waves.tailRamp,
-		hRamp = this.waves.headRamp,
-		tri = this.waves.triangle,
-		xo,
-		yo;
-
-		var xyFactor = [
-			grid0,
-			grid1
-		];
-
-		var cubicBezier = jsBezier.factorCurveBy(curve,xyFactor);
-		
-		var p = jsBezier.pointOnCurve(cubicBezier, tRamp);
-		var g = jsBezier.gradientAtPoint(cubicBezier, tRamp);
-
-		var xo = p.x - (this.dims[0]*.5);
-
-		var yo = grid1 - p.y - (this.dims[1]*.5) - (((axisLength[1]-this.dims[1])*.5) - y - this.itemMargins[1]);
-
-		var zo = 0;
-
-		this.e.style.transformOrigin = this.e.style.webkitTransformOrigin = this.e.style.MozTransformOrigin = '50%';
-		
-		this.e.style.transform = this.e.style.MozTransform = this.e.style.webkitTransform = 'translate3d(' + xo + 'px,' + yo +'px, ' + zo + 'px)' + ' rotateZ('+g*40+120+'deg)';
-
-		var z = 10000-this.index;
-		this.e.style.zIndex = z;
-
-		this.e.style.opacity = 1;
-     //this.e.style.zIndex = Math.abs(Math.floor(tri*100));
-    
-    
-		this.pPos = [x,y];
-	}     
-	
-	
 	$(document).ready(function(){
      setTimeout(function(){
        window.tremula = createTremula();
