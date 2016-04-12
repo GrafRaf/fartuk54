@@ -1251,7 +1251,24 @@ section#design-text, section#production-text, section#mount-text {
     
 }
 
+#instagrams {
+  background-color: #fafafa;
+}
 
+#instagrams h2 {
+  text-align: center;
+}
 
+.instagram-div {
+  margin-left: 7%;
+  display: inline;  
+}
 
-
+.instagram-img {
+  background-color: #fbfbfb;
+  border-radius: 50%;
+  border: 1px solid #cccfd0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
