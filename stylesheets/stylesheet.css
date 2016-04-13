@@ -1279,3 +1279,12 @@ section#design-text, section#production-text, section#mount-text {
   overflow: hidden;
   position: relative;
 }
+
+section#catalog {
+    text-align: center;
+}
+
+#catalog a {
+    font-size: xx-large;
+    text-decoration: underline;
+}
