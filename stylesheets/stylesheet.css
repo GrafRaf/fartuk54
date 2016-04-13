@@ -1257,7 +1257,14 @@ section#design-text, section#production-text, section#mount-text {
 
 #instagrams h2 {
   text-align: center;
+  padding-top: 15px;
 }
+
+#instagrams h2 img {
+  height: 36px;
+  vertical-align: top;
+}
+
 
 .instagram-div {
   margin-left: 7%;
