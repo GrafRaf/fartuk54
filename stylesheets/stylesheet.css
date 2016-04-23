@@ -919,6 +919,11 @@ header h3{
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+.mount-video {
+    width: 600px;
+    height: 400px;
+}
+
 
 /* #Media Queries
 ================================================== */
@@ -986,6 +991,11 @@ header h3 {
     display: inline-block;
     margin-left: 3%;
 }  
+
+.mount-video {
+    width: 430px;
+    height: 320px;
+}
   
 }
 
