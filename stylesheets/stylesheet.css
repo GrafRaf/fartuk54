@@ -919,7 +919,7 @@ header h3{
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
-.mount-video {
+#mount-video {
     width: 600px;
     height: 400px;
 }
@@ -992,7 +992,7 @@ header h3 {
     margin-left: 3%;
 }  
 
-.mount-video {
+#mount-video {
     width: 430px;
     height: 320px;
 }
