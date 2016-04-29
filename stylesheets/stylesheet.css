@@ -919,22 +919,24 @@ header h3{
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+   #mount-video {
+     width:100%;
+     height:600px;
+   }
+
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { 
-   #mount-video{
-     width:100%;
-     height:600px;
-   }
+
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #mount-video {
       width: 100%;
-      height: 400px;
+      height: 500px;
   }  
   .inner {
     width: 740px;
@@ -1002,6 +1004,12 @@ header h3 {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+
+  #mount-video {
+      width: 100%;
+      height: 400px;
+  }    
+  
   .inner {
     width: 93%;
   }
@@ -1094,6 +1102,11 @@ header h3 {
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
  
+  #mount-video {
+      width: 100%;
+      height: 300px;
+  }   
+ 
 #mount ul, #mount menu, #mount dir {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -1113,6 +1126,11 @@ header h3 {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { 
+
+  #mount-video {
+      width: 100%;
+      height: 200px;
+  }  
 
 .contacts span {
     font-size: 0.8em;
