@@ -472,7 +472,7 @@ function fartukDataAdapter(data, env) {
     this.imgUrl = data.url_n;
     this.auxClassList = "flickrRS";//stamp each mapped item with map ID 
     //data-lightbox="image-1" data-title="My caption"
-    this.template = this.data.template || ('<a href=""><img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/></a>');
+    this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
 }
 
 // updateConfig() enables updating of configuration parameters after an instance is running.
@@ -497,14 +497,16 @@ function applyBoxClick() {
             var data = $.data(t).model.model.data;
         }
         if (data){
-            $(t).magnificPopup({
-    		    type: 'image',
-	    	    closeOnContentClick: true,
-		        mainClass: 'mfp-img-mobile',
-		        image: {
-			        verticalFit: true
-		        }
-	        });                        
+       		console.log(t);
+            	$(t).magnificPopup({
+    			type: 'image',
+	    	   	closeOnContentClick: true,
+		        	mainClass: 'mfp-img-mobile',
+		        	image: {
+		        		src: t.children[0].src,
+			        	verticalFit: true
+		        	}
+	        	});                        
         } //alert(JSON.stringify(data));
     })
 }
