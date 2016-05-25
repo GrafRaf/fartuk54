@@ -1,4 +1,13 @@
-function createTremula(){
+function changeView(){
+	var surfaceMap = document.getElementById("surfaceMap").value;
+	window.tremula = createTremula(surfaceMap);
+	applyBoxClick();
+	loadFlickr()	
+}
+
+function createTremula(_surfaceMap){
+    
+    var wWidth = window.innerHeight;
 
     // .tremulaContainer must exist and have actual dimentionality 
     // requires display:block with an explicitly defined H & W
@@ -6,6 +15,15 @@ function createTremula(){
 
     //this creates a hook to a new Tremula instance
     var tremula = new Tremula();
+    var surfaceMap = tremula.projections.xyPlain;
+    switch (_surfaceMap) {
+    	case 'xyPlain':return tremula.projections.xyPlain;
+    	case 'streamHorizontal':return tremula.projections.streamHorizontal;
+    	case 'pinterest':return tremula.projections.pinterest;
+    	case 'mountain':return tremula.projections.mountain;
+    	case 'turntable':return tremula.projections.turntable;
+    	case 'enterTheDragon':return tremula.projections.enterTheDragon;
+    }
 
     //Create a config object -- this is how most default behaivior is set.
     //see updateConfig(prop_val_object,refreshStreamFlag) method to change properties of a running instance
@@ -42,7 +60,7 @@ function createTremula(){
       // (x) enterTheDragon
       // (x) userProjection  <-- 
       //----------------------
-      surfaceMap          :tremula.projections.mountain,//userProjection,
+      surfaceMap          : surfaceMap, //mountain,//userProjection,
 
       //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
       staticAxisCount     :0,//zero based 
