@@ -1,11 +1,15 @@
 function changeView(){
-	var surfaceMap = document.getElementById("surfaceMap").value;
-     setTimeout(function(){
-	window.tremula = createTremula(surfaceMap);
-	applyBoxClick();
-	loadFlickr();	
-      },0);	
-
+	var _surfaceMap = document.getElementById("surfaceMap").value;
+	var surfaceMap = tremula.projections.xyPlain;
+    	switch (_surfaceMap) {
+    		case 'xyPlain': surfaceMap =  tremula.projections.xyPlain; break;
+    		case 'streamHorizontal': surfaceMap =  tremula.projections.streamHorizontal; break;
+    		case 'pinterest': surfaceMap =  tremula.projections.pinterest; break;
+    		case 'mountain': surfaceMap =  tremula.projections.mountain; break;
+    		case 'turntable': surfaceMap =  tremula.projections.turntable; break;
+    		case 'enterTheDragon': surfaceMap =  tremula.projections.enterTheDragon; break;
+    	}
+	tremula.Grid.updateConfig({surfaceMap:surfaceMap},true);
 }
 
 function createTremula(_surfaceMap){
@@ -18,15 +22,7 @@ function createTremula(_surfaceMap){
 
     //this creates a hook to a new Tremula instance
     var tremula = new Tremula();
-    var surfaceMap = tremula.projections.xyPlain;
-    switch (_surfaceMap) {
-    	case 'xyPlain':return tremula.projections.xyPlain;
-    	case 'streamHorizontal':return tremula.projections.streamHorizontal;
-    	case 'pinterest':return tremula.projections.pinterest;
-    	case 'mountain':return tremula.projections.mountain;
-    	case 'turntable':return tremula.projections.turntable;
-    	case 'enterTheDragon':return tremula.projections.enterTheDragon;
-    }
+    
 
     //Create a config object -- this is how most default behaivior is set.
     //see updateConfig(prop_val_object,refreshStreamFlag) method to change properties of a running instance
