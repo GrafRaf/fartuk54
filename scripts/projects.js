@@ -521,7 +521,7 @@ function applyBoxClick() {
   				//titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
   				// Or the function that should return the title. For example:
   				titleSrc: function(item) {
-  				   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+  				   return item.data.imgTitle;
   				},
   				verticalFit: true, // Fits image in area vertically
   				tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
