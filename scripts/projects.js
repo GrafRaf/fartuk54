@@ -1,15 +1,13 @@
-var tremula =  null;
-
 function changeView() {
     var _surfaceMap = document.getElementById("surfaceMap").value;
-    var surfaceMap = tremula.projections.xyPlain;
+    var surfaceMap = window.tremula.projections.xyPlain;
     switch (_surfaceMap) {
-        case 'xyPlain': surfaceMap = tremula.projections.xyPlain; break;
-        case 'streamHorizontal': surfaceMap = tremula.projections.streamHorizontal; break;
-        case 'pinterest': surfaceMap = tremula.projections.pinterest; break;
-        case 'mountain': surfaceMap = tremula.projections.mountain; break;
-        case 'turntable': surfaceMap = tremula.projections.turntable; break;
-        case 'enterTheDragon': surfaceMap = tremula.projections.enterTheDragon; break;
+        case 'xyPlain': surfaceMap = window.tremula.projections.xyPlain; break;
+        case 'streamHorizontal': surfaceMap = window.tremula.projections.streamHorizontal; break;
+        case 'pinterest': surfaceMap = window.tremula.projections.pinterest; break;
+        case 'mountain': surfaceMap = window.tremula.projections.mountain; break;
+        case 'turntable': surfaceMap = window.tremula.projections.turntable; break;
+        case 'enterTheDragon': surfaceMap = window.tremula.projections.enterTheDragon; break;
     }
     window.tremula.Grid.updateConfig({ surfaceMap: surfaceMap }, true);
 }
@@ -440,8 +438,8 @@ function loadFlickr() {
         {width_n: 442, height_n: 295, url_n: '/content/projects/min/271.jpg', title:'Кухонные фартуки из заклённого стекла с фотопечатью' }          
         */
     ];
-    tremula.appendData(rs, fartukDataAdapter);//flicker
-    tremula.cache.endOfScrollFlag = false;
+    window.tremula.appendData(rs, fartukDataAdapter);//flicker
+    window.tremula.cache.endOfScrollFlag = false;
 }
 
 
@@ -500,11 +498,7 @@ function applyBoxClick() {
 
 
 $(document).ready(function () {
-    var tremula =  new Tremula();
-    setTimeout(function () {
         window.tremula = createTremula();
         applyBoxClick();
         loadFlickr();
-    }, 0);
 });
-
