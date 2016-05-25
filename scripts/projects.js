@@ -12,7 +12,7 @@ function changeView(){
 	tremula.Grid.updateConfig({surfaceMap:surfaceMap},true);
 }
 
-function createTremula(_surfaceMap){
+function createTremula(){
     
     var wWidth = window.innerHeight;
 
@@ -59,7 +59,7 @@ function createTremula(_surfaceMap){
       // (x) enterTheDragon
       // (x) userProjection  <-- 
       //----------------------
-      surfaceMap          : surfaceMap, //mountain,//userProjection,
+      surfaceMap          : tremula.projections.xyPlain, //mountain,//userProjection,
 
       //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
       staticAxisCount     :0,//zero based 
