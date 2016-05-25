@@ -14,7 +14,7 @@ function changeView() {
 
 function createTremula() {
 
-    var wWidth = window.innerHeight;
+    var wHeight = window.innerHeight;
 
     // .tremulaContainer must exist and have actual dimentionality 
     // requires display:block with an explicitly defined H & W
@@ -62,7 +62,11 @@ function createTremula() {
         surfaceMap: tremula.projections.streamHorizontal, //mountain,//userProjection,
 
         //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
-        staticAxisCount: 0,//zero based 
+        staticAxisCount: (wHeight > 1000) ? 
+            2 : 
+            (wHeight > 600) ? 
+                1 : 
+                0,//zero based 
 
         //the grid that will be used to project content
         //NOTE: Generally, this will stay the same and various surface map projections
