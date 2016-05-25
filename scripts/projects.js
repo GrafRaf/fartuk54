@@ -1,8 +1,11 @@
 function changeView(){
 	var surfaceMap = document.getElementById("surfaceMap").value;
+     setTimeout(function(){
 	window.tremula = createTremula(surfaceMap);
 	applyBoxClick();
 	loadFlickr();	
+      },0);	
+
 }
 
 function createTremula(_surfaceMap){
@@ -499,10 +502,10 @@ function createTremula(_surfaceMap){
 
 
 	$(document).ready(function(){
-     //setTimeout(function(){
-       //window.tremula = createTremula();
-       //applyBoxClick();
-       //loadFlickr();
-      //},0);
+     setTimeout(function(){
+       window.tremula = createTremula();
+       applyBoxClick();
+       loadFlickr();
+      },0);
      });
 	
