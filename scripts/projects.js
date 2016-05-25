@@ -500,8 +500,9 @@ function applyBoxClick() {
        		console.log(t);
             	$(t).magnificPopup({
 			items: {
-      				src: t.children[0].src,
-      				verticalFit: true
+      				src: t.children[0].src.replace('/min/','/'),
+      				verticalFit: true,
+      				titleSrc: function(){return t.children[0].src.replace('/content/projects/min/','').replace('.jpg','');}
     			},            		
     			type: 'image',
 	    	   	closeOnContentClick: true,
