@@ -502,7 +502,10 @@ function applyBoxClick() {
 
 
 $(document).ready(function () {
+    
+    setTimeout(function () {
         window.tremula = createTremula();
         applyBoxClick();
         loadFlickr();
+    }, 500);
 });
