@@ -502,7 +502,18 @@ function applyBoxClick() {
 			items: {
       				src: t.children[0].src.replace('/min/','/'),
       				verticalFit: true,
-      				titleSrc: function(){return t.children[0].src.replace('/content/projects/min/','').replace('.jpg','');}
+				markup: 
+					'<div class="mfp-figure">'+
+            				'<div class="mfp-close"></div>'+
+            				'<div class="mfp-img"></div>'+
+            				'<div class="mfp-bottom-bar">'+
+              				'<div class="mfp-title"></div>'+
+              				'<div class="mfp-counter"></div>'+
+            				'</div>'+
+          				'</div>',      				
+      				titleSrc: function(){
+      					return t.children[0].src.substring(t.children[0].src.indexOf('/min/')).replace('/min/','').replace('.jpg','');
+      				}
     			},            		
     			type: 'image',
 	    	   	closeOnContentClick: true,
