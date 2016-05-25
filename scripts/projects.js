@@ -1,3 +1,5 @@
+var tremula =  null;
+
 function changeView() {
     var _surfaceMap = document.getElementById("surfaceMap").value;
     var surfaceMap = tremula.projections.xyPlain;
@@ -498,6 +500,7 @@ function applyBoxClick() {
 
 
 $(document).ready(function () {
+    var tremula =  new Tremula();
     setTimeout(function () {
         window.tremula = createTremula();
         applyBoxClick();
