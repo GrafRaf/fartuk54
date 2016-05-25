@@ -499,14 +499,14 @@ function applyBoxClick() {
         if (data){
        		console.log(t);
             	$(t).magnificPopup({
+			items: {
+      				src: t.children[0].src,
+      				verticalFit: true
+    			},            		
     			type: 'image',
 	    	   	closeOnContentClick: true,
-		        	mainClass: 'mfp-img-mobile',
-		        	image: {
-		        		src: t.children[0].src,
-			        	verticalFit: true
-		        	}
-	        	});                        
+	        	mainClass: 'mfp-img-mobile',
+        	});                        
         } //alert(JSON.stringify(data));
     })
 }
