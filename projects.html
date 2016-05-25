@@ -45,25 +45,32 @@
 				height:100%;
 				width:100%;
 				position:fixed;
-				top:0;
+				top:24;
 				left:0;
 				margin:0;
 				border: black solid 1px;
 			}        
+	.surfaceMapContainer {
+		margin-top:2px;
+    		text-align: center;
+    		color: black;			
+	}
     </style>
 
     <title>Fartuk54 - Галерея.</title>
 </head>
 
 <body>
-	<select onchange="changeView()" id="surfaceMap" name="surfaceMap">
-		<option value="xyPlain">xyPlain</option>
-		<option value="streamHorizontal">streamHorizontal</option>
-		<option value="pinterest">pinterest</option>
-		<option value="mountain">mountain</option>
-		<option value="turntable">turntable</option>
-		<option value="enterTheDragon">enterTheDragon</option>
-	</select>
+	<div class="surfaceMapContainer">
+		<select onchange="changeView()" id="surfaceMap" name="surfaceMap">
+			<option value="xyPlain">xyPlain</option>
+			<option value="streamHorizontal">streamHorizontal</option>
+			<option value="pinterest">pinterest</option>
+			<option value="mountain">mountain</option>
+			<option value="turntable">turntable</option>
+			<option value="enterTheDragon">enterTheDragon</option>
+		</select>
+	</div>
 	<div class="pageLayoutContainer">
     		<div class="tremulaContainer"></div>
     	</div>
