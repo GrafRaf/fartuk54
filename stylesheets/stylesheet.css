@@ -480,6 +480,11 @@ header h2 {
   margin: 0 auto;
 }
 /* -------------- my -------------- */
+a#projects-link{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
 #panels img, #schema img, #catalog img, #mount img {
     width: 100%
 }
