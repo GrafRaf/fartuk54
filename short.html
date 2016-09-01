@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="стекло в интерьере,сикнали,фартук,фотофартук,закалённое стекло,каталог,фартук с фотопечатью,стекляные панели для фартук на кухню кухни,стекляные панели с фотопечатью для кухни,качественные стекляные панели с фотопечатью для кухни">
+    <meta name="google-site-verification" content="N8j9HgOc-ED0TneXbcKB7rbeJqn_Nw9JhqY-OVkt28k" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Fartuk54 - Мини фартук из закалённого стекла.</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>Fartuk54</h1>
+            <h3>Стеклянные кухонные панели (скинали) под ключ</h3>
+            <div class="contacts">
+                <span>8(383)-287-45-75</span>
+                <br/>
+                <span>8-913-006-45-75</span>
+                <br/>
+                <span><a href="mailto:2874575@mail.ru">2874575@mail.ru</a></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <h2>Мини фартук из закалённого стекла. Не только надёжно, но и стильно.</h2>
+        <h3>Стекло закалённое толщина 4 мм, размеры 600х900 мм, 4 отверстия под крепёж.</h3>
+        <div class="inner clearfix">          
+            <section id="catalog">
+                <a href="./content/mini-catalog.pdf" target="_blank">Мини фото фартук. Каталог.</a>
+                <img src="./images/mini-catalog-images.jpg" />
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        function sendCallRequest(){
+           sendMsg("Заказ звонка");
+       }
+       
+       function sendMeasureRequest(){
+           sendMsg("Заявка на замер");
+       }
+       
+       function sendMsg(msgType){
+           var msgBody = "";
+           var sender = "";
+           switch (msgType) {
+               case "Заказ звонка":
+                    msgBody = document.getElementById("callRequestMsgBody").value;
+                    sender = document.getElementById("callRequestSender").value;
+                    break;
+               case "Заявка на замер":
+                    msgBody = document.getElementById("measureRequestMsgBody").value;
+                    sender = document.getElementById("measureRequestSender").value;
+                    break;
+               default:
+                    msgBody = document.getElementById("callRequestMsgBody").value;
+                    sender = document.getElementById("callRequestSender").value;
+                    msgBody += "|"+document.getElementById("measureRequestMsgBody").value;
+                    sender += "|"+document.getElementById("measureRequestSender").value;
+                    break;                
+           };
+           if ((sender || "").length < 7) {
+               alert("Пожалуйста, проверьте указанный email/номер телефона");
+           } else {
+           var xhttp = new XMLHttpRequest();
+           xhttp.open("POST", "http://apitest20160203050209.azurewebsites.net/api/values", true);
+           xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+           xhttp.onreadystatechange = function() {
+                //console.log(xhttp);
+                //if (xhttp.readyState == 4 && xhttp.status == 200) {
+                if (xhttp.readyState == 4){
+                    if (xhttp.status == 200 || xhttp.status == 204) {
+                    //document.getElementById("demo").innerHTML = xhttp.responseText;
+                        alert("Спасибо! Ваша заявка отправлена и будет обработана в ближайшее время.");
+                    }else{
+                        alert("К сожалению, что-то пошло не так. \r\nПопробуйте ещё раз или позвоните/напишите нам: \r\n телефон 8-913-006-45-75\r\n.почта 2874575@mail.ru\r\n\r\nСпасибо.");
+                    }
+                }
+            };
+           xhttp.send("MsgType="+encodeURI(msgType)+"&Sender="+encodeURI(sender)+"&MsgBody="+encodeURI(msgBody));               
+           }
+       }
+    </script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35218530 = new Ya.Metrika({
+                    id:35218530,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35218530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- ga -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52750827-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- /ga -->
+</body>
+
+</html>
