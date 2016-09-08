@@ -489,6 +489,13 @@ a#projects-link{
     width: 100%
 }
 
+.banner{
+  text-align: center;
+}
+.banner a {
+  color: red;
+}
+
 section#design-text, section#production-text, section#mount-text {
     margin-top: 20px;
 }
@@ -786,7 +793,6 @@ form h3 {
 }
 
 #content-wrapper {
-  padding-top: 30px;
   border-top: solid 1px #fff;
 }
 
